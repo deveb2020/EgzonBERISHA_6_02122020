@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="FishEye est un site web qui permet aux photographes indépendants de présenter leurs meilleurs travaux.">
+    <meta name="keywords" content="photos, videos, sport, architecture, photographers">
+    <title>FishEye</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css">
+    <link rel="stylesheet" href="../CSS/photographers.css">
+    <link rel="icon" type="image/png" href="../Photos/Favicon.png"/>
+</head>
+
+<body>  
+
+<!-- |||||||||||||||||||| HEADER |||||||||||||||||||||||||||| -->
+<header>
+
+    <h1><a href="accueil.html" ><img src="/Photos/LOGO-fisheye.jpg"  width="210" height="60" alt="LOGO"></a></h1>
+</header>
+
+<!-- ||||||||||||||||| MAIN CONTENT ||||||||||||||||||||||||| -->
+<main>
+
+    <!--|||||||| Profil |||||||||||-->
+    <div id="photographer-container"></div> 
+
+    <!--||||||| DROPDOWN |||||||||-->
+    <span class="trier-par-txt">Trier par</span>
+    <div class="dropdown">
+        <i class="fas fa-chevron-down" id="drop-down-btn"></i>
+        <button  class="dropbtn trierBtn">Popularité</button>
+        <i class="fas fa-chevron-up fa-chevron-up-NO" id="close-up-icon"></i>
+        <div id="myDropdown" class="dropdown-content">
+            <a href="#" class="trierBtn">Date</a>
+            <a href="#" class="trierBtn">Titre</a>
+        </div>
+    </div>
+
+    <!--||||||||||| Work |||||||||||||-->
+    <div id="photographer-work"></div>
+
+    <!-- |||||| LIGHTBOX ||||||||||| -->
+    <div id="lightBoxContainer">
+    <div id="lightBoxBody">
+        <i class="fas fa-times closeIcon"></i>
+        <i class="fas fa-chevron-left leftIcon"></i>
+        <i class="fas fa-chevron-right rightIcon"></i>
+        <div id="photoPlaceHolder"></div>
+        <div id="photoName">Photo Name here</div>
+    </div>
+    </div>
+
+    <!-- ||||||| CONTACT FORM |||||||||| -->
+    <div id="form-container">
+        <div class="form-container">
+            <h1>Contactez-moi<br></h1>
+            <p id="nameOfThePhotopgraphe"></p>
+            <form>
+                <p id="X-button"><i class="fas fa-times"></i></p>
+                <label>Prénom</label><br>
+                <input id="prenom" type="text"><br>
+                <p class="error" id="error-prenom"></p>
+                <label>Nom</label><br>
+                <input id="nom" type="text"><br>
+                <p class="error" id="error-nom"></p>
+                <label>Email</label><br>
+                <input id="email" type="text"><br>
+                <p class="error" id="error-email"></p>
+                <label>Votre Message</label><br>
+                <input id="message" type="text" class="votre-message-box"><br>
+                <p class="error" id="error-message"></p>
+                <button>Envoyer</button>
+            </form>
+        </div>
+    </div>
+
+     <!-- ||||||| Likes & Price box |||||||||| -->
+     <div id="likes-and-price-box"></div>
+
+</main>
+
+<script src="../JAVASCRIPT/photographers.js"></script>
+</body>
+</html>
