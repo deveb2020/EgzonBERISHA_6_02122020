@@ -1,7 +1,7 @@
 /////////////////////////////////////////// FETCH //////////////////////////////////////////////
 
 function grabTheDataFromJSON(){
-  fetch("./../JSON.json")
+  fetch("/JSON.json")
     .then(response => response.json())
     .then(dataJson => { 
         displayPhotographers(dataJson);                   //function is invoked here 
