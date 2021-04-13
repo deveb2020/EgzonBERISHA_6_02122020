@@ -1,0 +1,222 @@
+
+body{
+    font-family: 'Roboto', sans-serif;
+}
+
+h1>a{
+    text-decoration: none;
+    color: #901C1C;
+}
+
+.header_container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-bottom: 1rem;
+    width: 75%;
+}
+
+.header_container>h1{
+    color: #901C1C;
+    font-size: 1rem;
+    font-family: 'Open Sans', sans-serif;
+    margin-top: 1.5rem;
+    margin-right: 0rem;
+}
+
+.filters_container{
+    margin-top: auto;
+    margin-bottom: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    list-style-type: none;
+    margin: 2.8rem 0;
+
+}
+
+.filters_container>ul{
+    padding: 0%;
+}
+
+.filters_container>li{
+    border: 1px solid #C4C4C4;
+    border-radius: 15px;
+    padding: 0.2rem 0.4rem;
+    color: #9c2e2e;
+    margin: 0 0.1rem;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+
+.individual-tags{
+    cursor: pointer;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin: 0 0.2rem;
+}
+
+.photographerContainer>ul{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 !important;
+    justify-content: center;
+}
+
+.individual-tags:hover {
+    background-color: #901C1C;
+    color: white;
+}
+
+.filters_container>li:hover{
+    background-color: #901C1C;
+    color: white;
+}
+
+.active{
+    background-color: #901C1C !important;
+    color: white !important;
+}
+
+
+main>h2{
+    color: #901C1C;
+    margin-top: auto;
+    margin-bottom: auto;
+    font-size: 1.5rem;
+    position: absolute;
+    top: 3rem;
+    right: 5%;
+}
+
+
+/* Photographers container */
+
+#container{
+    width: 100%;
+    height: auto;
+    background-color: rgb(255, 255, 255);
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.photographerContainer{
+    width: 22rem;
+    margin: 0.5rem;
+    padding: 0.3rem;
+}
+
+.portraitBox{
+    width: 11rem;
+    height: 11rem;
+    background-color: rgb(89, 206, 38);
+    margin: 0 auto;
+    border-radius: 50%;
+    overflow: hidden;
+    box-shadow: 1px 2px 17px 3px grey;
+}
+.portraitBox:hover{
+    box-shadow: 0px 0px 30px 1px rgb(92, 90, 90);
+    cursor: pointer;
+}
+
+.portraitBox>img{
+    width: 100%;
+    height: 100%; 
+    object-fit: cover;
+}
+
+.name, .city, .tags, .tagline, .price{
+    text-align: center;
+}
+
+.name{
+    color: #D3573C;
+    margin-bottom: 0 !important;
+    font-size: 1.5rem;
+    margin-bottom: 0.7rem !important;
+}
+
+.price{
+    color: #757575;
+    margin: 0 !important;
+}
+
+.city{
+    color: #901C1C;
+    margin: 0.2rem!important;
+}
+
+.tagline{
+    margin: 0 !important;
+}
+
+.tag {
+    border: 1px solid #C4C4C4;
+    border-radius: 20px; 
+    padding: 0.2rem 0.4rem;
+    color: #901C1C;
+}
+
+.photographerContainer>a{
+    text-decoration: none;
+}
+/* Passer au contenue BTN */
+#passer-au-contenue{
+    position: fixed;
+    top: 1.5rem;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 1rem;
+    background-color: #DB8876;
+    border-radius: 8px;
+    padding: 0.4rem 0.7rem;
+    color: black;
+    border: none;
+    font-weight: 600;
+    cursor: pointer;
+    display: none;
+    text-decoration: none;
+}
+
+#passer-au-contenue:hover{
+    color: white;
+    background-color: #901C1C;
+}
+
+
+@media screen and (max-width: 950px){
+    
+    .header_container{
+        justify-content: space-between;
+        width: 100% !important;
+    }
+    .header_container>h1{
+        font-size: 2.5rem;
+    }
+    
+    main>h2{
+        order: 2;
+        font-size: 1rem;
+        top: 3.5rem !important;
+    }
+    .filters_container{
+        order: 3;
+        margin-bottom: 1.5rem;
+        margin: auto;
+        margin-bottom: 1.5rem;
+        padding-left: 0;
+    }
+    .filters_container>span{
+        margin: 0.1rem;
+    }
+
+
+}

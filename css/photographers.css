@@ -1,0 +1,473 @@
+
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+h1>a{
+    color: #901C1C;
+    font-size: 2.5rem;
+    font-family: 'Open Sans', sans-serif;
+    text-decoration: none;
+    margin-left: 2rem;
+}
+
+.profil-container{
+    background-color: #f5f4f4;
+    width: 94%;
+    height: 11rem;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    position: relative;
+}
+
+#scursorAdd{
+    cursor: pointer !important ;
+    
+}
+
+.profil-container a {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.profil-container>h2{
+    padding: 1.5rem 1.5rem 0rem 1rem;
+    margin: 0;
+    width: 17rem;
+    color: #D3573C;
+    font-size: 2rem;
+}
+
+.profil-container>p{
+    padding-left: 1.2rem;
+    padding-top: 1rem;
+    margin: 0;
+    width: 17rem;
+    color: #901C1C;
+}
+
+#test {
+    border-radius: 7px;
+}
+
+.profil-container>button{
+    width: 10rem;
+    height: 3rem;
+    margin-top: 0.7rem;
+    position: absolute;
+    left: 18rem;
+    background-color: #901C1C;
+    color: white;
+    border: 0;
+    font-size: 1rem;
+}
+
+.tagline{
+    color: grey !important;
+}
+
+.tags{
+    border: 1px solid #a1a0a0;
+    border-radius: 20px;
+    padding: 0.2rem 0.3rem;
+    color:  #901C1C;
+    cursor: pointer;
+}
+
+.photoBox{
+    width: 9rem;
+    height: 9rem;
+    border-radius: 50%;
+    margin: 1rem;
+    overflow: hidden;
+    position: absolute;
+    right: 2rem;
+    top: -0rem;
+}
+
+.photoBox>img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* FORM */
+
+.form-container{
+    width: 20rem;
+    background-color: #DB8876;
+    padding: 1rem;
+    position: relative;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 3;
+    margin: 0;
+}
+
+.form-container>h1{
+    margin-top: 0;
+}
+
+.form-container>form>input{
+    width: 97%;
+    height: 1.8rem;
+    border-radius: 0.3rem;
+    border: 2px solid white;
+    margin: 0.2rem 0;
+}
+
+.votre-message-box{
+    height: 5rem !important;
+    margin-bottom: 1rem !important;
+}
+
+.form-container>form>button{
+    height: 2rem ;
+    width: 7rem ;
+    background-color: #901C1C;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+#X-button{
+    position: absolute;
+    top: -0.9rem;
+    right: 1rem;
+    font-size: 2rem;
+    color: white;
+    font-weight: 100;
+    cursor: pointer;
+}
+
+#form-container{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(128, 128, 128, 0.671);
+    z-index: 5;
+    margin: 0;
+    display: none;
+}
+
+/* Photographe Work */
+
+#photographer-work{
+    margin-top: 0rem !important;
+    width: 100%;
+    margin: 0;
+    margin-bottom: 5rem !important;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.photo-box{
+    width: 22rem;
+    height: 20rem;
+    background-color: rgb(255, 255, 255);
+    margin: 1rem;
+    
+}
+
+.photo-box>.photo{
+    width: 22rem;
+    height: 20rem;
+    background-color: rgb(255, 255, 255);
+    cursor: pointer;
+}
+
+.photo-box>.photo>img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.photo>img, .photo>iframe {
+    border-radius: 10px;
+}
+
+.text>p{
+    margin: 0.5rem  0.5rem;
+    color: #901C1C;    
+}
+
+.text>p>b{
+    float: right;
+    color: #901C1C;  
+}
+
+.text>p>b>i{
+    color: #901C1C;
+    cursor: pointer;
+}
+.activeRed{
+    color: red !important;
+    cursor: pointer;
+}
+
+#trierButton{
+    margin-top: 2rem;
+    margin-left: 7%;
+}
+
+#lightBoxContainer{
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+    height: 200vw;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    display: none;
+}
+
+#lightBoxBody{
+    width: 60%;
+    height: 90%;
+    background-color: rgb(255, 255, 255);
+    position: fixed;
+    left: 50%;
+    transform: translate(-50%,0);
+    top: 3%;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.closeIcon{
+    position: absolute;
+    right: 1rem;
+    top: 0.5rem;
+    font-size: 1.7rem;
+    color: #901C1C;
+}
+
+.leftIcon{
+    position: absolute;
+    left: 1rem;
+    top: 48%;
+    font-size: 2rem;
+    cursor: pointer;
+    color: #901C1C;
+}
+
+.rightIcon{
+    position: absolute;
+    right: 1rem;
+    top: 48%;
+    font-size: 2rem;
+    cursor: pointer;
+    color: #901C1C;
+}
+
+#photoName{
+    position: absolute;
+    left: 10%;
+    padding: 0.5rem 0rem;
+    color:#901C1C;
+    font-size: 1rem;
+    font-weight: 600;
+    font-family: sans-serif;
+}
+
+#photoPlaceHolder{
+    width: 90%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0);
+    margin: 0 auto;
+    overflow: hidden;
+}
+#photoPlaceHolder>img {
+    width: 90%;
+    height: 100%;
+    object-fit: cover;
+}
+.photoLightboxOnClick{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.photo>img, .photo>iframe{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.closeIcon{
+    cursor: pointer;
+}
+.likesAndPriceContainer{
+    width: 14rem;
+    background-color: #DB8876;
+    position: fixed;
+    right: 1rem;
+    bottom: 0px;
+    border-radius: 8px 8px 0 0;
+    justify-content: center;
+    text-align: center;
+    display: flex;
+    padding: 0.8rem;
+}
+div>.Likes{
+    margin-right: 3rem;
+    font-weight: 600;
+}
+div>.Price{
+    font-weight: 600;
+}
+#nameOfThePhotopgraphe{
+    font-size: 2rem;
+    margin-top: 0rem;
+}
+.form-container>h1{
+    margin-bottom: 0.3rem;
+}
+
+/* Dropdown Button */
+.dropdown>.dropbtn {
+    background-color: #901C1C;
+    color: white;
+    padding: 0.5rem 3.4rem;
+    font-size: 16px;
+    border: 1px solid #901C1C;
+    cursor: pointer;
+    border-radius: 5px 5px 5px 5px;
+}
+  
+  /* The container <div> - needed to position the dropdown content */
+  .dropdown {
+    position: relative;
+    display: inline-block;
+    margin: 1rem;
+  }
+  
+  /* Dropdown Content (Hidden by Default) */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #901C1C;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    display: none;
+    border-radius: 0 0 5px 5px;
+    transition: all 1.00s ease-in-out;
+  }
+  
+  /* Links inside the dropdown */
+  .dropdown-content a {
+    text-align: center;
+    color: rgb(255, 255, 255);
+    padding: 0.5rem 4.3rem;
+    text-decoration: none;
+    display: block;
+    border-top: 2px solid white;
+    margin: 0 0.5rem;
+    
+  }
+  
+  .show {
+      display: block;
+  }
+
+  .fa-chevron-up{
+      position: absolute;
+      top: 0.8rem;
+      right: 0.7rem;
+      color: white;
+  }
+
+  .fa-chevron-up-NO{
+    display: none;
+  }
+
+  #close-up-icon{
+      cursor: pointer;
+  }
+
+  .trier-par-txt{
+      margin-left: 2.5rem;
+      font-weight: 500;
+      font-family: sans-serif;
+  }
+
+  .fa-chevron-down{
+      position: absolute;
+      right: 0.7rem;
+      top: 0.6rem;
+      color: white;
+      cursor: pointer;
+  }
+ 
+
+/* MOBILE STATE */
+@media only screen and (max-width: 690px){
+    h1>a{
+        color: #901C1C;
+        font-size: 2.5rem;
+        font-family: 'Open Sans', sans-serif;
+        text-decoration: none;
+        margin-left: 1rem;
+    }
+    .profil-container>button{
+        position: fixed;
+        bottom: 0rem;
+        left: 50%;
+        right: 50%;
+        transform: translate(-50%, -50%);
+        width: 8rem !important;
+        height: 2rem !important;
+    }
+    .profil-container{
+        margin-bottom: 2rem;
+    }
+
+    .photoBox{
+        width: 6rem;
+        height: 6rem;
+        border-radius: 50%;
+        margin: 1rem;
+        overflow: hidden;
+        position: absolute;
+        right: 0rem;
+        top: -0rem;
+    }
+
+    .form-container{
+        width: 80% !important;
+    }
+
+    .likesAndPriceContainer{
+        display: none;
+    }
+    #lightBoxBody{
+        width: 90%;
+    }
+    .leftIcon{
+        position: absolute;
+        left: 0.2rem;
+        top: 48%;
+    }
+    .rightIcon{
+        position: absolute;
+        right: 0.2rem;
+        top: 48%;
+    }
+    .closeIcon{
+        position: absolute;
+        right: 0.4rem;
+        top: 0.5rem;
+    }
+    .trier-par-txt, .dropdown{
+        display: none;
+    }
+}
