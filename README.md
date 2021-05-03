@@ -10,6 +10,7 @@ Tech used for creating this app:
 
 ## Purpose of the project
 ALGORITHM
+
 RESPONSIVE
 
 - The main objective of this project was to get more comfortable with JavaScript and more specifically to learn Algorithms
