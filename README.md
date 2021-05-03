@@ -3,7 +3,7 @@
 
 ## Tech
 
-Tech used for creating the UI:
+Tech used for creating this app:
 - [JavaScript] 
 - [HTML] 
 - [CSS] 
