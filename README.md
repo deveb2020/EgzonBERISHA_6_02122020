@@ -21,7 +21,8 @@ RESPONSIVE
 
 ## How to run this project
 To clone this project into your local machine use this command:
-    You need to install GIT first [ https://git-scm.com/download/ ]
+
+   !! You need to install GIT first [ https://git-scm.com/download/ ]
 
     $ git clone https://github.com/deveb2020/EgzonBERISHA_6_02122020.git
 Or you can just Download it as ZIP
