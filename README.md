@@ -1,4 +1,4 @@
-# FishEye
+# FishEye - P6
 ## _This is a freelancing platform for photographers_
 
 ## Tech
